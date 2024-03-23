@@ -40,7 +40,6 @@ git push -u origin main
 Las siguientes condiciones son requisitos mínimos necesarios para la aprobación del final:
 
 - **Cumplir con todas las funcionalidades obligatorias**
-- Solo se podrán utilizar las librerías que se detallan en este README. Ver [Dependencias](docs/desarrollo.md#dependencias)
 - No se considerará realizada cualquier funcionalidad que sea implementada utilizando una librería distinta a las permitidas.
 - Deberá ser desarrollada utilizando Javascript con React.js como libreria.
 - Se espera que la página de Contacto, contenga los flujos de validación necesarios (minimo 2 validaciones), para un correcto submit del formulario.
@@ -57,7 +56,6 @@ Los siguientes aspectos son extras al requisito mínimo de aprobación que será
 **Funcionalidad de destacados**
 
 - Se valorará funcionalidades extra a esta feature, como lo pueden ser el eliminar de destacadados, manejo de errores al intentar agregar repetidos y reseteo total de los destacados.
-
 
 **Estilos**
 
