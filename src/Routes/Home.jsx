@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react'
 import Card from '../Components/Card'
 import axios from 'axios'
 
@@ -7,15 +8,25 @@ import axios from 'axios'
 const Home = () => {
 
   // const apiKey = ''
-  // const url = ' '+ apiKey
+  useEffect( () => {
 
-  // axios(url)
-  // .then(res = console.log(res))
+    const [data, setData] = useState()
+    const url = `https://jsonplaceholder.typicode.com/users` 
+  axios(url)
+  .then(res = setData(res.data))
+
+  return () =>{
+
+  }
+
+  }, [])
+
   return (
     <main className="" >
       <h1>Home</h1>
       <div className='card-grid'>
         {/* Aqui deberias renderizar las cards */}
+         {data ? data.map((item)=> <Card key={item.id} item={item}/>) : 'Cargando...'  }
       </div>
     </main>
   )
