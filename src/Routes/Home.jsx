@@ -8,12 +8,12 @@ import axios from 'axios'
 const Home = () => {
 
   // const apiKey = ''
-  useEffect( () => {
+  useEffect(() => {
 
-    const [data, setData] = useState()
+    const [data, setData] = useState({})
     const url = `https://jsonplaceholder.typicode.com/users` 
   axios(url)
-  .then(res = setData(res.data))
+  .then(res => setData(res.data))
 
   return () =>{
 
@@ -22,11 +22,12 @@ const Home = () => {
   }, [])
 
   return (
+    //Certificar esto
     <main className="" >
       <h1>Home</h1>
       <div className='card-grid'>
         {/* Aqui deberias renderizar las cards */}
-         {data ? data.map((item)=> <Card key={item.id} item={item}/>) : 'Cargando...'  }
+        {data.map((item)=> <Card key={item.id} item={item}/>)}
       </div>
     </main>
   )
