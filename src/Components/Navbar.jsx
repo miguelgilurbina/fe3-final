@@ -15,7 +15,7 @@ const Navbar = () => {
       <button onClick= {()=> navigate (-1)}>Go Back</button>
       <Link to={routes.home}>Home</Link>
       <Link to={routes.contact}>Contact</Link>
-      <Link to={routes.detail}>Detail</Link>
+      {/* <Link to={'/detail:id'}>Detail</Link> */}
       <Link to={routes.favs}>Favs</Link>
       {/* Deberan implementar ademas la logica para cambiar de Theme con el button */}
       <button>Change theme</button>
