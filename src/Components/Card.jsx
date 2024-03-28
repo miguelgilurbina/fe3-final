@@ -16,10 +16,8 @@ const Card = ({item}) => {
   return (
     <div className="card">
         {/* En cada card deberan mostrar en name - username y el id */}
-        <Link to={`./detail/${item.id}`}><h3>{item.name}</h3></Link>
-        <h4>{item.email}</h4>
-        <h4>{item.phone}</h4>
-        <h4>{item.website}</h4>    
+        <Link to={`./detail/`+ item.id}><h2>{item.name}</h2></Link>
+           
        
 
 
