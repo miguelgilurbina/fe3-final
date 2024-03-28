@@ -6,11 +6,8 @@ import axios from 'axios'
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
 const Home = () => {
-
-  // const apiKey = ''
+  const [data, setData] = useState({})
   useEffect(() => {
-
-    const [data, setData] = useState({})
     const url = `https://jsonplaceholder.typicode.com/users` 
   axios(url)
   .then(res => setData(res.data))
