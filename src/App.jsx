@@ -18,8 +18,8 @@ function App() {
       <Footer/>
 
       <Routes> 
-        <Route path='/' element={<App/>}>
-          <Route path={routes.home} element={<Home/>} />
+        <Route path='/' element={<Home/>}>
+          {/* <Route path={routes.home} element={<Home/>} /> */}
           <Route path={routes.contact} element={<Contact/>} />
           <Route path={routes.detail} element={<Detail/>} />
           <Route path={routes.favs} element={<Favs/>} />
