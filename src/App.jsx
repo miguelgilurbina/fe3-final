@@ -1,20 +1,28 @@
 
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
-import { Outlet } from "react-router-dom";
 import { Routes, Route} from 'react-router-dom'
 import Home from './Routes/Home.jsx';
 import Contact from './Routes/Contact.jsx';
 import Detail from './Routes/Detail.jsx';
 import Favs from './Routes/Favs.jsx';
 import { routes } from './utils/routes.js';
+import { useContextGlobal1 } from "./Components/utils/global.context.jsx";
 
 
-function App() {
+
+
+function App() {  
+
+  const {state} = useContextGlobal1({})
+
+
+
+  
   return (
-      <div className="App">  
+      <div className={state.theme ? " " : 'dark'} >  
       <Navbar/>
-      {/* <Outlet/> */}
+   
       <Footer/>
       <Routes> 
           <Route path='/' element={<Home/>}/>
