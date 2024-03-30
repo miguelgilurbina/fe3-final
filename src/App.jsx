@@ -23,7 +23,7 @@ function App() {
       <div className={state.theme ? " " : 'dark'} >  
       <Navbar/>
    
-      <Footer/>
+      
       <Routes> 
           <Route path='/' element={<Home/>}/>
           {/* <Route path={routes.home} element={<Home/>} /> */}
@@ -31,7 +31,7 @@ function App() {
           <Route path={'/detail/:id'} element={<Detail/>} />
           <Route path={routes.favs} element={<Favs/>} />
       </Routes>
-     
+      <Footer/>
       </div>
   );
 }

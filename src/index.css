@@ -19,6 +19,8 @@ code {
   cursor: pointer;
 }
 
+
+
 h1{
   text-align: center;
 }
@@ -28,6 +30,10 @@ nav{
   width: 80vw;
   justify-content: flex-start;
   padding: 1rem;
+}
+.card-img {
+  width: 8vw;
+  height: 8vw;
 }
 
 a{

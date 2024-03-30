@@ -11,16 +11,16 @@ const Form = () => {
   const  [show, setShow]     = useState(false)
   const  [err, setErr]       = useState(false)
 
-  const onChangeNombre = (e) => setClient(...client, nombre = e.target.value);
-  const onChangeEmail = (e) => setClient(...client, email= e.target.value);
+  const onChangeNombre = (e) => setClient({...client, nombre : e.target.value});
+  const onChangeEmail = (e) => setClient({...client, email: e.target.value});
   
   const onSubmitForm = (e) => {
 
     e.preventDefault();
     const emailRegex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/
-    if(nombre.length > 5 && emailRegex.test(email)){
+    if(client.nombre.length > 5 && emailRegex.test(client.email)){
       setShow(true)
-      console.log('Gracias' + nombre + ', te contactaremos cuanto antes vía mail');
+      console.log('Gracias ' + client.nombre + ', te contactaremos cuanto antes vía mail');
     } else {
         setErr(true)
       }

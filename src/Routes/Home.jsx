@@ -12,10 +12,12 @@ const Home = () => {
   return (
     
     <main className={state.theme ? ' ' : 'dark'} >
-      <h1>Home</h1>
+
+      
       <div className='card-grid'>
         {/* Aqui deberias renderizar las cards */}
-        {state.data.map((item)=> <Card key={item.id} item={item}/>)}
+        {state.data.map((item)=> 
+        <Card key={item.id} item={item}/>)}
         
       </div>
     </main>
