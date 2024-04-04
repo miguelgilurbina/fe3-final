@@ -24,7 +24,7 @@ const Detail = () => {
     <div className={state.theme ? ' ' : 'dark'} >
       
       
-      <img className='card-img'src="../../public/doctor.jpg" alt="doctor image" />
+      <img className='card-img'src="/src/assets/doctor.jpg" alt="doctor image" />
       <table>
         <tbody>
           <tr>
