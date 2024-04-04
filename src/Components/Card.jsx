@@ -20,7 +20,7 @@ const Card = ({item}) => {
   return (
     <div className="card" key= {item.id}>
         {/* En cada card deberan mostrar en name - username y el id */}
-        <img className="card-img" src="../../public/doctor.jpg" alt="doctor img" />
+        <img className="card-img" src="/src/assets/doctor.jpg" alt="doctor img" />
         <Link to={`detail/`+ item.id}><h2 >{item.name}</h2></Link>
         {/* No debes olvidar que la Card a su vez servira como Link hacia la pagina de detalle */}
         {/* Ademas deberan integrar la logica para guardar cada Card en el localStorage */}

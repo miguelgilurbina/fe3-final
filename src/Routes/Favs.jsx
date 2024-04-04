@@ -17,7 +17,7 @@ const Favs = () => {
       <div className={state.theme ? "" : 'dark'} >
         {state.favs.map((item)=> (
         <div className = "card " key={item.id} >
-          <img className="card-img" src="../../public/doctor.jpg" alt="doctor img" />
+          <img className="card-img" src="/src/assets/doctor.jpg" alt="doctor img" />
           <Link to={`/detail/${item.id}`}><h2>{item.name}</h2></Link>
         </div>
         ))}
